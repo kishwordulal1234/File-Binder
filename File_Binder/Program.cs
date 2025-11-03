@@ -10,6 +10,12 @@ namespace File_Binder
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(defaultValue: false);
+
+			// Show splash screen first with "Cracked by unknown hart"
+			SplashScreen splash = new SplashScreen();
+			splash.ShowDialog();
+
+			// Then run main application
 			Application.Run(new FileBinderForm());
 		}
 	}
